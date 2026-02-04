@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Needle & Thread</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="text-primary-custom">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="fs-4 fw-bold text-primary-custom">Needle<span class="text-accent">&</span>Thread</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="patterns.html">Patterns</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tutorials.html">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-lg-3">
+                    <label class="theme-switch-wrapper">
+                        <span class="visually-hidden">Toggle Theme</span>
+                        <div class="theme-switch">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </div>
+                    </label>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                    <a href="signup.html" class="btn btn-primary-custom">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section-padding" style="padding-top: 120px;">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5 fade-up">
+                <span class="badge bg-primary-custom-subtle text-primary-custom px-3 py-2 rounded-pill mb-3">Free
+                    Education</span>
+                <h1 class="display-4 fw-bold mb-3">Learn & Master</h1>
+                <p class="lead text-secondary mx-auto" style="max-width: 600px;">From your first stitch to advanced
+                    colorwork, our video library has everything you need to grow.</p>
+
+                <!-- Category Pills -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <button class="btn btn-primary-custom rounded-pill px-4">All Videos</button>
+                    <button class="btn btn-outline-custom rounded-pill px-4">Knitting</button>
+                    <button class="btn btn-outline-custom rounded-pill px-4">Crochet</button>
+                    <button class="btn btn-outline-custom rounded-pill px-4">Techniques</button>
+                    <button class="btn btn-outline-custom rounded-pill px-4">Fixing Mistakes</button>
+                </div>
+            </div>
+
+            <!-- Featured Tutorial -->
+            <div class="row mb-5 fade-up">
+                <div class="col-12">
+                    <div class="card border-0 rounded-4 overflow-hidden text-white position-relative shadow-lg">
+                        <img src="assets/images/hero.png" class="card-img w-100 object-fit-cover" alt="Featured"
+                            style="height: 500px; filter: brightness(0.6);">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-5">
+                            <span class="badge bg-accent text-dark align-self-start mb-3">Featured Series</span>
+                            <h2 class="display-5 fw-bold mb-3">The Ultimate Sock Guide</h2>
+                            <p class="fs-5 mb-4 text-white-50" style="max-width: 600px;">A 5-part series taking you from
+                                toe-up to cuff-down. Learn heel turns, gussets, and the perfect Kitchener stitch
+                                bind-off.</p>
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-primary-custom btn-lg">Start Watching</button>
+                                <button class="btn btn-outline-light btn-lg rounded-pill px-4">View Syllabus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="row g-4 stagger-container">
+                <div class="col-12 mb-2 fade-up">
+                    <h3 class="fw-bold">New & Trending</h3>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/pattern.png" alt="Knitting 101">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">15:20</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary-custom bg-opacity-10 text-primary-custom">Beginner</span>
+                                <small class="text-secondary">2 days ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">Knitting 101: The Basics</h5>
+                            <p class="text-secondary small line-clamp-2">Learn how to cast on and perform the basic knit
+                                stitch in this comprehensive guide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/community.png" alt="Crochet Basics">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">08:45</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-accent bg-opacity-10 text-accent-dark">Crochet</span>
+                                <small class="text-secondary">1 week ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">First Crochet Stitches</h5>
+                            <p class="text-secondary small line-clamp-2">Master the chain and single crochet stitch to
+                                start your first scarf project.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog.png" alt="Advanced">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">22:15</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-success bg-opacity-10 text-success">Advanced</span>
+                                <small class="text-secondary">3 weeks ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">Mastering Cables</h5>
+                            <p class="text-secondary small line-clamp-2">Understand the mechanics of cable knitting and
+                                how to read complex charts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/texture.png" alt="Fixing Mistakes">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">12:30</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning bg-opacity-10 text-warning-dark">Tips</span>
+                                <small class="text-secondary">1 month ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">Fixing Dropped Stitches</h5>
+                            <p class="text-secondary small line-clamp-2">Don't panic! Here's how to rescue your knitting
+                                without ripping it all out.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/hero.png" alt="Colorwork">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">18:10</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span
+                                    class="badge bg-primary-custom bg-opacity-10 text-primary-custom">Intermediate</span>
+                                <small class="text-secondary">2 months ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">Intro to Fair Isle</h5>
+                            <p class="text-secondary small line-clamp-2">Learn two-handed colorwork knitting for
+                                beautiful patterned garments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/community.png" alt="Finishing">
+                            <span class="position-absolute bottom-0 end-0 m-3 badge bg-dark opacity-75">10:00</span>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 50px; height: 50px;">
+                                    <span class="text-primary-custom fs-5">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info bg-opacity-10 text-info-dark">Finishing</span>
+                                <small class="text-secondary">3 months ago</small>
+                            </div>
+                            <h5 class="fw-bold mb-2">Blocking Your Work</h5>
+                            <p class="text-secondary small line-clamp-2">The final step to making your handmade items
+                                look professional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Instructors -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h6 class="text-accent text-uppercase fw-bold ls-1 mb-2">Mentors</h6>
+                <h2 class="display-5 fw-bold">Learn from the Best</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="text-center p-4 rounded-4 bg-white shadow-sm h-100 hover-lift">
+                        <img src="assets/images/community.png" class="rounded-circle mb-4 object-fit-cover" width="120"
+                            height="120" alt="Instructor">
+                        <h4 class="fw-bold mb-1">Elena Rostova</h4>
+                        <p class="text-primary-custom fw-medium mb-3">Master Knitter</p>
+                        <p class="text-secondary small mb-4">With 20 years of experience, Elena specializes in complex
+                            lace and garment construction.</p>
+                        <button class="btn btn-outline-custom rounded-pill btn-sm">View Profile</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="text-center p-4 rounded-4 bg-white shadow-sm h-100 hover-lift">
+                        <img src="assets/images/hero.png" class="rounded-circle mb-4 object-fit-cover" width="120"
+                            height="120" alt="Instructor">
+                        <h4 class="fw-bold mb-1">Marcus Chen</h4>
+                        <p class="text-primary-custom fw-medium mb-3">Crochet Designer</p>
+                        <p class="text-secondary small mb-4">Marcus brings modern aesthetics to traditional crochet
+                            techniques and amigurumi.</p>
+                        <button class="btn btn-outline-custom rounded-pill btn-sm">View Profile</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="text-center p-4 rounded-4 bg-white shadow-sm h-100 hover-lift">
+                        <img src="assets/images/pattern.png" class="rounded-circle mb-4 object-fit-cover" width="120"
+                            height="120" alt="Instructor">
+                        <h4 class="fw-bold mb-1">Sarah Jenkins</h4>
+                        <p class="text-primary-custom fw-medium mb-3">Color theory Expert</p>
+                        <p class="text-secondary small mb-4">Learn how to choose palettes and work with hand-dyed yarns
+                            for stunning results.</p>
+                        <button class="btn btn-outline-custom rounded-pill btn-sm">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="text-primary-custom">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="fs-4 fw-bold text-primary-custom">Needle<span
+                                class="text-accent">&</span>Thread</span>
+                    </a>
+                    <p class="text-secondary mb-4">The ultimate destination for knitting and crochet enthusiasts to
+                        connect, learn, and create together.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">PI</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="patterns.html">Patterns</a></li>
+                        <li class="mb-2"><a href="tutorials.html">Tutorials</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Community</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="community.html">Forums</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Weekly Inspiration</h5>
+                    <p class="text-secondary mb-3">Get free patterns and tips delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary-custom">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary-subtle">
+                <div class="col-md-6 text-center text-md-start text-secondary small">
+                    © 2024 Needle & Thread. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-secondary small">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

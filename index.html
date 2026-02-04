@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the warmest Knitting & Crochet community. Share patterns, learn tutorials, and connect with makers.">
+    <title>Needle & Thread - Knitting Community</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="text-primary-custom">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="fs-4 fw-bold text-primary-custom">Needle<span class="text-accent">&</span>Thread</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="patterns.html">Patterns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-lg-3">
+                    <label class="theme-switch-wrapper">
+                        <span class="visually-hidden">Toggle Theme</span>
+                        <div class="theme-switch">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </div>
+                    </label>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                    <a href="signup.html" class="btn btn-primary-custom">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-vh-100 d-flex align-items-center position-relative overflow-hidden" style="padding-top: 100px;">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 hero-content">
+                    <span
+                        class="d-inline-block py-1 px-3 rounded-pill bg-white text-primary fw-medium mb-3 shadow-sm">🧶
+                        #1 Create Community</span>
+                    <h1 class="display-3 fw-bold mb-4">Craft Your Story With <span class="text-primary-custom">Yarn &
+                            Love</span></h1>
+                    <p class="lead text-secondary mb-5">Join thousands of makers sharing patterns, tutorials, and
+                        inspiration. Your next masterpiece starts here.</p>
+                    <div class="d-flex gap-3">
+                        <a href="signup.html" class="btn btn-primary-custom btn-lg">Join Community</a>
+                        <a href="patterns.html" class="btn btn-outline-custom btn-lg">Explore Patterns</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative fade-up" style="transition-delay: 0.2s;">
+                    <div class="position-relative z-1">
+                        <img src="assets/images/hero.png" alt="Knitting Hands" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Patterns -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h6 class="text-accent text-uppercase fw-bold ls-1 mb-2">Inspiration</h6>
+                    <h2 class="mb-0">Trending Patterns</h2>
+                </div>
+                <a href="patterns.html" class="btn btn-outline-custom">View All</a>
+            </div>
+
+            <div class="row g-4 stagger-container">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/pattern.png" alt="Cozy Sweater">
+                            <span
+                                class="position-absolute top-0 end-0 m-3 badge bg-white text-dark shadow-sm">Intermediate</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold mb-2">Cable Knit Heritage Sweater</h4>
+                            <p class="text-secondary small mb-3">by Sarah Jenkins</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">$5.00</span>
+                                <a href="pattern-details.html"
+                                    class="text-decoration-none fw-medium text-dark stretched-link">View Pattern -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/texture.png" alt="Yarn Texture" style="filter: brightness(0.9);">
+                            <span
+                                class="position-absolute top-0 end-0 m-3 badge bg-white text-dark shadow-sm">Beginner</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold mb-2">Textured Infinity Scarf</h4>
+                            <p class="text-secondary small mb-3">by Mike Wool</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">Free</span>
+                                <a href="pattern-details.html"
+                                    class="text-decoration-none fw-medium text-dark stretched-link">View Pattern -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog.png" alt="Winter Hat">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="h5 fw-bold mb-2">Nordic Winter Beanie</h4>
+                            <p class="text-secondary small mb-3">by Emma Crafts</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">$3.50</span>
+                                <a href="pattern-details.html"
+                                    class="text-decoration-none fw-medium text-dark stretched-link">View Pattern -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community CTA -->
+    <section class="section-padding position-relative overflow-hidden">
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <img src="assets/images/community.png" alt="Community Workshop"
+                        class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-5 offset-lg-1 fade-up">
+                    <h2 class="mb-4 display-5 fw-bold">Join 50,000+ Makers Worldwide</h2>
+                    <p class="lead text-secondary mb-4">Connect with fellow enthusiasts, join local meetups, and share
+                        your journey in our supportive forums.</p>
+                    <ul class="list-unstyled mb-4 text-secondary">
+                        <li class="mb-2 d-flex align-items-center"><span class="text-primary-custom me-2">✔</span>
+                            Weekly Zoom Knit-alongs</li>
+                        <li class="mb-2 d-flex align-items-center"><span class="text-primary-custom me-2">✔</span>
+                            Expert Q&A Sessions</li>
+                        <li class="mb-2 d-flex align-items-center"><span class="text-primary-custom me-2">✔</span> Buy &
+                            Sell Handmade Goods</li>
+                    </ul>
+                    <a href="community.html" class="btn btn-primary-custom">Find Your Tribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h6 class="text-accent text-uppercase fw-bold ls-1 mb-2">Our Values</h6>
+                <h2 class="display-5 fw-bold">Why Needle & Thread?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="p-5 bg-body rounded-4 shadow-sm h-100 border-bottom border-4 border-primary-custom">
+                        <div class="fs-1 mb-4 text-primary-custom">🧵</div>
+                        <h4 class="fw-bold mb-3">Expert Patterns</h4>
+                        <p class="text-secondary mb-0">Every pattern is tested by our expert panel to ensure clarity and
+                            professional results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="p-5 bg-body rounded-4 shadow-sm h-100 border-bottom border-4 border-accent">
+                        <div class="fs-1 mb-4 text-accent">🎥</div>
+                        <h4 class="fw-bold mb-3">Video Tutorials</h4>
+                        <p class="text-secondary mb-0">Step-by-step 4K video tutorials for every stitch, perfect for
+                            visual learners.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.3s;">
+                    <div class="p-5 bg-body rounded-4 shadow-sm h-100 border-bottom border-4 border-success">
+                        <div class="fs-1 mb-4 text-success">💖</div>
+                        <h4 class="fw-bold mb-3">Kind Community</h4>
+                        <p class="text-secondary mb-0">Join a supportive group of makers who celebrate every stitch you
+                            make.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-surface overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h6 class="text-accent text-uppercase fw-bold ls-1 mb-2">Testimonials</h6>
+                <h2 class="display-5 fw-bold">Loved by the Community</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up">
+                    <div class="p-4 bg-body rounded-4 shadow-sm">
+                        <div class="text-warning mb-3">★★★★★</div>
+                        <p class="fst-italic text-secondary mb-4">"I finally learned how to read patterns thanks to
+                            their easy-to-follow guides. This community changed my life!"</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary-custom d-flex align-items-center justify-content-center text-white fw-bold"
+                                style="width: 48px; height: 48px;">EJ</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Emma Johnson</h6>
+                                <span class="text-secondary small">Beginner Knitter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="p-4 bg-body rounded-4 shadow-sm">
+                        <div class="text-warning mb-3">★★★★★</div>
+                        <p class="fst-italic text-secondary mb-4">"The pattern library is incredible. I've sold over 20
+                            sweaters on Etsy using these high-quality designs."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-accent d-flex align-items-center justify-content-center text-white fw-bold"
+                                style="width: 48px; height: 48px;">MW</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Mike Wood</h6>
+                                <span class="text-secondary small">Etsy Seller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="p-4 bg-body rounded-4 shadow-sm">
+                        <div class="text-warning mb-3">★★★★★</div>
+                        <p class="fst-italic text-secondary mb-4">"The weekly zoom knit-alongs are the highlight of my
+                            week. So many beautiful people and so much talent!"</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-success d-flex align-items-center justify-content-center text-white fw-bold"
+                                style="width: 48px; height: 48px;">SR</div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sarah Reed</h6>
+                                <span class="text-secondary small">Community Member</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="text-primary-custom">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="fs-4 fw-bold text-primary-custom">Needle<span
+                                class="text-accent">&</span>Thread</span>
+                    </a>
+                    <p class="text-secondary mb-4">The ultimate destination for knitting and crochet enthusiasts to
+                        connect, learn, and create together.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">PI</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="patterns.html">Patterns</a></li>
+                        <li class="mb-2"><a href="tutorials.html">Tutorials</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Community</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="community.html">Forums</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Weekly Inspiration</h5>
+                    <p class="text-secondary mb-3">Get free patterns and tips delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary-custom">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary-subtle">
+                <div class="col-md-6 text-center text-md-start text-secondary small">
+                    © 2024 Needle & Thread. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-secondary small">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

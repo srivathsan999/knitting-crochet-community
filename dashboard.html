@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Needle & Thread</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <style>
+        .dashboard-sidebar .nav-link {
+            color: var(--text-secondary);
+            padding: 12px 20px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .dashboard-sidebar .nav-link:hover,
+        .dashboard-sidebar .nav-link.active {
+            background-color: var(--primary);
+            color: white !important;
+        }
+
+        .dashboard-sidebar .nav-link.active {
+            box-shadow: 0 4px 12px rgba(124, 94, 153, 0.3);
+        }
+
+        .project-card-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="fs-4 fw-bold text-primary-custom">Needle<span class="text-accent">&</span>Thread</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="patterns.html">Patterns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-lg-3">
+                    <label class="theme-switch-wrapper">
+                        <span class="visually-hidden">Toggle Theme</span>
+                        <div class="theme-switch">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </div>
+                    </label>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown">
+                            <img src="assets/images/texture.png" class="rounded-circle" width="32" height="32"
+                                alt="User">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="padding-top: 120px;">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <div class="bg-surface p-4 rounded-4 border border-light sticky-top" style="top: 100px;">
+                        <div class="text-center mb-4">
+                            <img src="assets/images/texture.png" class="rounded-circle mb-3 shadow-sm" width="80"
+                                height="80" alt="Profile">
+                            <h5 class="fw-bold mb-1">Emma Knits</h5>
+                            <p class="text-secondary small">Member since 2023</p>
+                        </div>
+                        <nav class="nav flex-column dashboard-sidebar">
+                            <a class="nav-link active d-flex align-items-center gap-2" href="#overview">
+                                <span>📊</span> Overview
+                            </a>
+                            <a class="nav-link d-flex align-items-center gap-2" href="#store">
+                                <span>🧶</span> Pattern Store
+                            </a>
+                            <a class="nav-link d-flex align-items-center gap-2" href="#projects">
+                                <span>✨</span> Project Sharing
+                            </a>
+                            <a class="nav-link d-flex align-items-center gap-2" href="#settings">
+                                <span>⚙️</span> Settings
+                            </a>
+                        </nav>
+                        <div class="mt-4 pt-4 border-top border-light">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="small text-secondary">Credits</span>
+                                <span class="fw-bold text-primary-custom">250 pts</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-custom w-100">Get More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Welcome Header -->
+                    <div class="d-flex justify-content-between align-items-end mb-5 fade-up">
+                        <div>
+                            <h1 class="fw-bold mb-2">Dashboard</h1>
+                            <p class="text-secondary mb-0">Welcome back, Emma! Here's what's happening today.</p>
+                        </div>
+                        <button class="btn btn-primary-custom">+ New Project</button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="row g-4 mb-5 fade-up">
+                        <div class="col-md-4">
+                            <div class="bg-surface p-4 rounded-4 border border-light h-100">
+                                <span class="d-block text-secondary small mb-2">Total Projects</span>
+                                <h3 class="fw-bold mb-0">12</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-surface p-4 rounded-4 border border-light h-100">
+                                <span class="d-block text-secondary small mb-2">Patterns Owned</span>
+                                <h3 class="fw-bold mb-0">8</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-surface p-4 rounded-4 border border-light h-100">
+                                <span class="d-block text-secondary small mb-2">Community Likes</span>
+                                <h3 class="fw-bold mb-0">1.2k</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pattern Store Section -->
+                    <div class="mb-5 fade-up" id="store">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="fw-bold mb-0">Pattern Store</h3>
+                            <a href="patterns.html" class="text-primary-custom text-decoration-none fw-medium">View
+                                All</a>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="custom-card card-hover">
+                                    <div class="card-img-wrapper">
+                                        <img src="assets/images/pattern.png" alt="Pattern">
+                                        <div class="position-absolute top-0 end-0 m-3">
+                                            <span class="badge bg-white text-dark shadow-sm">$5.99</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="fw-bold text-truncate mb-1">Autumn Cardigan</h5>
+                                        <p class="text-secondary small mb-2">By Sarah J.</p>
+                                        <button class="btn btn-sm btn-outline-custom w-100">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="custom-card card-hover">
+                                    <div class="card-img-wrapper">
+                                        <img src="assets/images/hero.png" alt="Pattern">
+                                        <div class="position-absolute top-0 end-0 m-3">
+                                            <span class="badge bg-success text-white shadow-sm">Free</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="fw-bold text-truncate mb-1">Basic Beanie</h5>
+                                        <p class="text-secondary small mb-2">By Needle & Thread</p>
+                                        <button class="btn btn-sm btn-primary-custom w-100">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="custom-card card-hover">
+                                    <div class="card-img-wrapper">
+                                        <img src="assets/images/blog.png" alt="Pattern">
+                                        <div class="position-absolute top-0 end-0 m-3">
+                                            <span class="badge bg-white text-dark shadow-sm">$8.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="fw-bold text-truncate mb-1">Cable Scarf</h5>
+                                        <p class="text-secondary small mb-2">By WoolyWorks</p>
+                                        <button class="btn btn-sm btn-outline-custom w-100">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Sharing Section -->
+                    <div class="fade-up" id="projects">
+                        <h3 class="fw-bold mb-4">Community Projects</h3>
+
+                        <!-- Share Input -->
+                        <div class="bg-surface p-4 rounded-4 border border-light mb-4">
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/texture.png" class="rounded-circle" width="48" height="48">
+                                <div class="flex-grow-1">
+                                    <textarea class="form-control mb-3" rows="2"
+                                        placeholder="Share your latest creation..."></textarea>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-sm btn-light text-secondary">
+                                            <span>📷</span> Add Photo
+                                        </button>
+                                        <button class="btn btn-primary-custom px-4">Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feed -->
+                        <div class="d-flex flex-column gap-4">
+                            <!-- Post 1 -->
+                            <div class="bg-surface p-4 rounded-4 border border-light">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="assets/images/community.png" class="rounded-circle" width="48"
+                                            height="48">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">KnitterKate</h6>
+                                            <span class="text-secondary small">2 hours ago</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-link text-secondary p-0">•••</button>
+                                </div>
+                                <p class="mb-3">Finally finished this sweater for my niece! The colorwork was tricky but
+                                    so worth it. 🧶✨</p>
+                                <img src="assets/images/hero.png" class="img-fluid rounded-4 mb-3 w-100"
+                                    style="max-height: 400px; object-fit: cover;">
+                                <div class="d-flex gap-4">
+                                    <button
+                                        class="btn btn-light text-primary-custom border-0 d-flex align-items-center gap-2">
+                                        <span>❤️</span> 245
+                                    </button>
+                                    <button
+                                        class="btn btn-light text-secondary border-0 d-flex align-items-center gap-2">
+                                        <span>💬</span> 42
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                        <span class="fs-4 fw-bold text-primary-custom">Needle<span
+                                class="text-accent">&</span>Thread</span>
+                    </a>
+                    <p class="text-secondary mb-4">The ultimate destination for knitting and crochet enthusiasts to
+                        connect, learn, and create together.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">PI</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="patterns.html">Patterns</a></li>
+                        <li class="mb-2"><a href="tutorials.html">Tutorials</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Community</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="community.html">Forums</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Weekly Inspiration</h5>
+                    <p class="text-secondary mb-3">Get free patterns and tips delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary-custom">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary-subtle">
+                <div class="col-md-6 text-center text-md-start text-secondary small">
+                    © 2024 Needle & Thread. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-secondary small">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Needle & Thread</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="fs-4 fw-bold text-primary-custom">Needle<span class="text-accent">&</span>Thread</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="patterns.html">Patterns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-lg-3">
+                    <label class="theme-switch-wrapper">
+                        <span class="visually-hidden">Toggle Theme</span>
+                        <div class="theme-switch">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </div>
+                    </label>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                    <a href="signup.html" class="btn btn-primary-custom">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-surface section-padding pb-0" style="padding-top: 120px;">
+        <div class="container text-center">
+            <span
+                class="d-inline-block py-1 px-3 rounded-pill bg-body text-primary fw-medium mb-3 shadow-sm fade-up">Our
+                Blog</span>
+            <h1 class="display-4 fw-bold mb-3 fade-up">Stories from the Studio</h1>
+            <p class="lead text-secondary fade-up mx-auto" style="max-width: 600px;">Tips, tricks, and behind-the-scenes
+                designs from our favorite makers.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 stagger-container">
+                <!-- Blog 1 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/blog.png" alt="Yarn Selection">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-light text-primary-custom border border-light me-2">Tips</span>
+                                <span class="small text-secondary">Oct 12, 2024</span>
+                            </div>
+                            <h4 class="h5 fw-bold mb-3"><a href="blog-yarn-selection.html"
+                                    class="text-decoration-none text-dark stretched-link">How to Choose the Perfect Yarn
+                                    for Your Sweater</a></h4>
+                            <p class="text-secondary small">Understanding fiber content, weight, and drape before you
+                                cast on.</p>
+                            <a href="blog-yarn-selection.html"
+                                class="btn btn-outline-custom btn-sm mt-3 w-100 position-relative z-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/hero.png" alt="Needle Types">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-light text-primary-custom border border-light me-2">Guides</span>
+                                <span class="small text-secondary">Sep 28, 2024</span>
+                            </div>
+                            <h4 class="h5 fw-bold mb-3"><a href="blog-bamboo-vs-metal.html"
+                                    class="text-decoration-none text-dark stretched-link">Bamboo vs. Metal Needles:
+                                    Which is Right for You?</a></h4>
+                            <p class="text-secondary small">A comprehensive comparison to help you knit faster and more
+                                comfortably.</p>
+                            <a href="blog-bamboo-vs-metal.html"
+                                class="btn btn-outline-custom btn-sm mt-3 w-100 position-relative z-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="col-md-6 col-lg-4 stagger-item">
+                    <div class="custom-card card-hover h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/community.png" alt="Community Spotlight">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span
+                                    class="badge bg-light text-primary-custom border border-light me-2">Spotlight</span>
+                                <span class="small text-secondary">Sep 15, 2024</span>
+                            </div>
+                            <h4 class="h5 fw-bold mb-3"><a href="blog-meet-the-maker.html"
+                                    class="text-decoration-none text-dark stretched-link">Meet the Maker: Sarah's
+                                    Journey to Pattern Design</a></h4>
+                            <p class="text-secondary small">How one hobbyist turned her passion for cables into a
+                                career.</p>
+                            <a href="blog-meet-the-maker.html"
+                                class="btn btn-outline-custom btn-sm mt-3 w-100 position-relative z-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                        <span class="fs-4 fw-bold text-primary-custom">Needle<span
+                                class="text-accent">&</span>Thread</span>
+                    </a>
+                    <p class="text-secondary mb-4">The ultimate destination for knitting and crochet enthusiasts to
+                        connect, learn, and create together.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">PI</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="patterns.html">Patterns</a></li>
+                        <li class="mb-2"><a href="tutorials.html">Tutorials</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="mb-3">Community</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="community.html">Forums</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Weekly Inspiration</h5>
+                    <p class="text-secondary mb-3">Get free patterns and tips delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary-custom">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary-subtle">
+                <div class="col-md-6 text-center text-md-start text-secondary small">
+                    © 2024 Needle & Thread. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-secondary small">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
