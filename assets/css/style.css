@@ -16,6 +16,11 @@
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
+
+    /* Bootstrap Overrides */
+    --bs-body-bg: var(--bg-body);
+    --bs-body-color: var(--text-primary);
+    --bs-tertiary-bg: var(--surface);
 }
 
 [data-theme="dark"] {
@@ -26,6 +31,11 @@
     --text-secondary: #9CA3AF;
     --border-color: rgba(255, 255, 255, 0.08);
     --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
+    /* Bootstrap Overrides */
+    --bs-body-bg: var(--bg-body);
+    --bs-body-color: var(--text-primary);
+    --bs-tertiary-bg: var(--surface);
 }
 
 /* Base Styles */
@@ -70,8 +80,41 @@ img {
     color: var(--accent);
 }
 
+.bg-primary-custom {
+    background-color: var(--primary) !important;
+}
+
+.bg-primary-custom-subtle {
+    background-color: rgba(var(--primary-rgb), 0.1) !important;
+}
+
+.text-body {
+    color: var(--text-primary);
+}
+
 .bg-surface {
     background-color: var(--surface);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow);
+}
+
+.hover-bg-opacity {
+    transition: background-color 0.2s ease;
+}
+
+.hover-bg-opacity:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .glass-effect {
@@ -172,6 +215,36 @@ img {
 
 .nav-link:hover,
 .nav-link.active {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: var(--surface) !important;
+    }
+
+    .navbar-collapse {
+        background-color: var(--surface);
+        padding: 1.5rem;
+        border-radius: var(--radius-md);
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--border-color);
+    }
+}
+
+.dropdown-menu {
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.dropdown-item {
+    color: var(--text-primary) !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(124, 94, 153, 0.1) !important;
     color: var(--primary) !important;
 }
 

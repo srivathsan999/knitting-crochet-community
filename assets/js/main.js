@@ -17,9 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const bsCollapse = typeof bootstrap !== 'undefined' ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
 
     navLinks.forEach((l) => {
-        l.addEventListener('click', () => {
-            if (menuToggle.classList.contains('show') && bsCollapse) {
-                bsCollapse.toggle();
+        l.addEventListener('click', (e) => {
+            // Only auto-close if it's not a dropdown toggle
+            if (!l.classList.contains('dropdown-toggle')) {
+                if (menuToggle.classList.contains('show') && bsCollapse) {
+                    bsCollapse.toggle();
+                }
             }
         });
     });
