@@ -299,6 +299,18 @@ img {
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
 }
 
+/* Hero Section */
+.hero-section {
+    padding-top: var(--navbar-height);
+}
+
+/* Responsive adjustments for hero section */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: calc(var(--navbar-height) + 20px);
+    }
+}
+
 /* Cards */
 .custom-card {
     background-color: var(--surface);
